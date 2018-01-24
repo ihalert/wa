@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package api;
+
+service WeatherAppService {
+	rpc GetWeatherForecast (CityNameCountryCodeRequest) returns (ForecastResponse) {}
+}
+
+message CityNameCountryCodeRequest {
+	string CityName = 1;
+	string CountryCode = 2;
+}
+
+message ForecastResponse {
+	string Text = 1;
+}
