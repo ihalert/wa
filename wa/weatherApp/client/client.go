@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/mivan/weatherApp/api"
+	"github.com/mivan/git_proba/wa/weatherApp/api"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"log"

@@ -2,8 +2,8 @@ package server
 
 import (
 	"fmt"
-	"github.com/mivan/weatherApp/api"
-	"github.com/mivan/weatherApp/entities"
+	"github.com/mivan/git_proba/wa/weatherApp/api"
+	"github.com/mivan/git_proba/wa/weatherApp/entities"
 	"golang.org/x/net/context"
 	//"log"
 	"strings"

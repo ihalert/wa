@@ -3,21 +3,21 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/mivan/weatherApp/api"
-	"github.com/mivan/weatherApp/entities"
+	"github.com/mivan/git_proba/wa/weatherApp/api"
+	"github.com/mivan/git_proba/wa/weatherApp/entities"
 	//	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"log"
 	"net"
 	//"google.golang.org/grpc"
 	//"net"
-	//"github.com/mivan/weatherApp/store"
+	//"github.com/mivan/git_proba/wa/weatherApp/store"
 	"io/ioutil"
 	"net/http"
 	"strconv"
 	"strings"
 	//"github.com/go-sql-driver/mysql"
-	"github.com/mivan/weatherApp/server"
+	"github.com/mivan/git_proba/wa/weatherApp/server"
 )
 
 //var M map[string]entities.DBStruct

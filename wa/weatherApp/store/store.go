@@ -2,9 +2,9 @@ package store
 
 import (
 	"database/sql"
-	"fmt"
-	"github.com/mivan/weatherApp/entities"
-	"log"
+	//	"fmt"
+	"github.com/mivan/git_proba/wa/weatherApp/entities"
+	//	"log"
 
 	_ "github.com/go-sql-driver/mysql"
 )
