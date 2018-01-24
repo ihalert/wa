@@ -4,7 +4,7 @@ import ()
 
 //
 //
-// GO PREPOZNAJE STRUKTURE UNUTAR DRUGOG PAKETA SAMO AKO POČINJU VELIKIM SLOVOM, PROPERTY-I ISTO TAKO
+//
 //
 
 type JsonStruct struct {

@@ -125,7 +125,7 @@ func main() {
 	}
 
 	for i := 0; i < 5; i++ {
-		fmt.Println("ISPIS ----------", i)
+		fmt.Println("PRINT ----------", i)
 	}
 
 }
