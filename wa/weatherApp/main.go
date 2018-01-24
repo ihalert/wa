@@ -61,7 +61,7 @@ func main() {
 
 			if err != nil {
 
-				fmt.Println("Neka greška")
+				fmt.Println(err)
 
 			} else if resp.StatusCode >= 200 && resp.StatusCode < 300 {
 
@@ -92,30 +92,14 @@ func main() {
 		}
 	}
 
-	// handler nekakav
-
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", 7777))
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	//type Server struct{}
-	/*
-		func (t *Server) GetWeatherForecast(ctx context.Context, in * api.CityNameCityCodeRequest) (*api.ForecastResponse, error){
-
-
-			// pogledaj za taj unos da li postoji prognoza i vrati ju van
-
-			return &api.ForecastResponse{Text:"Neki tekst prognoze"}, nil
-		}
-	*/
 	s := server.Server{}
 	grpcServer := grpc.NewServer()
 	server.MyMap = m
-
-	//api.RegisterWeatherAppServiceServer(grpcServer, &s)
-
-	// neki grpcServer.Serve() ...
 
 	api.RegisterWeatherAppServiceServer(grpcServer, &s)
 
